@@ -6,10 +6,7 @@ gem 'rack-flash'
 gem 'thin' # or mongrel
 
 # Component requirements
-gem 'haml'
-
-# Test requirements
-
+gem 'template-inheritance'
 
 # Padrino
 gem 'padrino', "0.9.28"
