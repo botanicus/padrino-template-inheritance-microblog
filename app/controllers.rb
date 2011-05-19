@@ -1,8 +1,8 @@
 Microblog.controllers  do
-  # get :index, :map => "/foo/bar" do
-  #   session[:foo] = "bar"
-  #   render 'index'
-  # end
+  get "/" do
+    @user = ENV["USER"]
+    render "index"
+  end
 
   # get :sample, :map => "/sample/url", :provides => [:any, :js] do
   #   case content_type
@@ -18,5 +18,5 @@ Microblog.controllers  do
   #   "Hello world!"
   # end
 
-  
+
 end
