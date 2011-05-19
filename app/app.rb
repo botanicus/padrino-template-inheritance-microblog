@@ -1,6 +1,9 @@
+require "template-inheritance/adapters/padrino"
+
 class Microblog < Padrino::Application
   register Padrino::Mailer
   register Padrino::Helpers
+  register TemplateInheritance::Rendering
 
   enable :sessions
 
